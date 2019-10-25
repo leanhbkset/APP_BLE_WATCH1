@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center_vertical|center_horizontal|center">
+        <LinearLayout
+            android:id="@+id/videolayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal|center">
+            <com.example.ckm.ckm_smband_rev1.CustomVideoView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/video_view"
+                android:layout_gravity="center_vertical|center_horizontal|center" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/imagelayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal|center">
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/img_view"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <Button
+            android:enabled="false"
+            android:id="@+id/btnheartbeat"
+            android:text="Scene1"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:enabled="false"
+            android:id="@+id/btnheartbulltet"
+            android:text="Scene2"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnclimax"
+            android:textAllCaps="false"
+            android:enabled="false"
+            android:text="Scene3"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnraindrop"
+            android:textAllCaps="false"
+            android:enabled="false"
+            android:text="Scene4"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btndance"
+            android:textAllCaps="false"
+            android:enabled="false"
+            android:text="Scene5"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:enabled="false"
+            android:id="@+id/btngame"
+            android:text="Scene6"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnConnect"
+            android:text="Connect"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
